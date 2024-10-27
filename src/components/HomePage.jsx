@@ -6,6 +6,7 @@ import rakunStock from "../assets/rakun-stock.png";
 import rakunIconTrans from "../assets/rakun-icon-trans.png";
 import rakunIcon from "../assets/rakun-icon.png";
 import rakunRocket from "../assets/rakun-rocket.png";
+import rakunWhitepaper from "../assets/RAKUN_Whitepaper.pdf";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -16,6 +17,12 @@ import { IoRocketOutline } from "react-icons/io5";
 import { FaXTwitter, FaDiscord, FaTelegram, FaTiktok } from "react-icons/fa6";
 
 function HomePage() {
+  // Add this function inside the HomePage component
+  const handleWhitepaperClick = (e) => {
+    e.preventDefault();
+    window.open(rakunWhitepaper, "_blank", "noopener,noreferrer");
+  };
+
   useEffect(() => {
     const handleNavClick = (event) => {
       event.preventDefault();
@@ -80,9 +87,8 @@ function HomePage() {
             ))}
             <li>
               <a
-                href="https://drive.google.com/file/d/18trPfTxcRYxC1gZoarsQxXnrqnJt1LKD/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={rakunWhitepaper}
+                onClick={handleWhitepaperClick}
                 className="relative inline-block px-3 lg:px-6 py-2 lg:py-3 text-base lg:text-lg font-semibold text-white bg-[#059284] rounded-lg lg:rounded-xl 
                 hover:bg-black transition-all duration-300 shadow-md hover:shadow-xl
                 transform hover:-translate-y-1 active:translate-y-0
