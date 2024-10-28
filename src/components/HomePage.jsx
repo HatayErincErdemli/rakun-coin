@@ -143,6 +143,28 @@ function HomePage() {
             </a>
           </div>
         </div>
+        {/* New section between home and story */}
+        <div className="progress-section bg-gradient-to-br from-[#8cc0bb] via-[#9cd6d0] to-[#8cc0bb] p-8 lg:p-12">
+          <div className="progress-bar w-full max-w-4xl mx-auto mb-8 text-center bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
+            <p className="text-3xl font-bold mb-6 text-black">
+              Token Minting Process Is Done
+            </p>
+
+            <div className="relative w-full h-8 bg-white/50 rounded-2xl border-2 border-black mb-6">
+              <div
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl flex items-center justify-center transition-all duration-1000"
+                style={{ width: "100%" }}
+              >
+                <span className="text-white text-lg font-bold">100%</span>
+              </div>
+            </div>
+
+            <p className="text-xl text-black">
+              We're totally minted out thanks to our community's precious
+              efforts
+            </p>
+          </div>
+        </div>
         <div
           id="story-section"
           className="story-section min-h-screen bg-gradient-to-br from-[#9cd6d0] via-[#a8e0da] to-[#8cc0bb] p-4 sm:p-6 md:p-8 lg:p-12 font-montserrat"
