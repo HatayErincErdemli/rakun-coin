@@ -115,7 +115,7 @@ function HomePage() {
               $RAKUN
             </h2>
             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 text-black">
-              Thrash kingdom, financial freedom!
+              Trash kingdom, financial freedom!
             </h3>
             <p className="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 text-gray-700">
               $RAKUN is a community-driven token that aims to empower holders
