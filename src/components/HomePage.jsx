@@ -15,8 +15,23 @@ import "react-vertical-timeline-component/style.min.css";
 import { FaChartLine, FaUsers, FaGlobe, FaCode } from "react-icons/fa";
 import { IoRocketOutline } from "react-icons/io5";
 import { FaXTwitter, FaDiscord, FaTelegram, FaTiktok } from "react-icons/fa6";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function HomePage() {
+  const notify = () =>
+    toast.success("Address copied to clipboard!", {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+
   // Add this function inside the HomePage component
   const handleWhitepaperClick = (e) => {
     e.preventDefault();
@@ -57,6 +72,7 @@ function HomePage() {
 
   return (
     <>
+      <ToastContainer />
       <header className="fixed top-0 left-0 w-full z-50 flex flex-col lg:flex-row justify-between items-center p-3 lg:p-6 bg-gradient-to-r from-[#8cc0bb] via-[#9cd6d0] to-[#8cc0bb] shadow-lg backdrop-blur-sm font-montserrat">
         <div className="flex items-center transform transition-transform duration-300 hover:scale-105 mb-3 lg:mb-0">
           <img
@@ -70,21 +86,23 @@ function HomePage() {
         </div>
         <nav className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl lg:rounded-2xl px-4 lg:px-6 py-2 lg:py-4 shadow-lg">
           <ul className="flex flex-wrap justify-center gap-2 lg:gap-4">
-            {["$RAKUN", "Story", "Roadmap", "Socials"].map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}-section`}
-                  className="relative inline-block px-3 lg:px-6 py-2 lg:py-3 text-base lg:text-lg font-semibold text-white bg-[#059284] rounded-lg lg:rounded-xl 
+            {["$RAKUN", "Donation", "Story", "Roadmap", "Socials"].map(
+              (item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase()}-section`}
+                    className="relative inline-block px-3 lg:px-6 py-2 lg:py-3 text-base lg:text-lg font-semibold text-white bg-[#059284] rounded-lg lg:rounded-xl 
                   hover:bg-black transition-all duration-300 shadow-md hover:shadow-xl
                   transform hover:-translate-y-1 active:translate-y-0
                   before:content-[''] before:absolute before:top-0 before:left-0 
                   before:w-full before:h-full before:bg-white before:opacity-0 
                   before:transition-opacity before:duration-300 hover:before:opacity-10"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
+                  >
+                    {item}
+                  </a>
+                </li>
+              )
+            )}
             <li>
               <a
                 href={rakunWhitepaper}
@@ -144,7 +162,10 @@ function HomePage() {
           </div>
         </div>
         {/* New section between home and story */}
-        <div className="progress-section bg-gradient-to-br from-[#8cc0bb] via-[#9cd6d0] to-[#8cc0bb] p-8 lg:p-12">
+        <div
+          id="donation-section"
+          className="donation-section bg-gradient-to-br from-[#8cc0bb] via-[#9cd6d0] to-[#8cc0bb] p-8 lg:p-12"
+        >
           <div className="progress-bar w-full max-w-4xl mx-auto mb-8 text-center bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
             <p className="text-3xl font-bold mb-6 text-black">
               Token Minting Process Is Done
@@ -163,6 +184,67 @@ function HomePage() {
               We're totally minted out thanks to our community's precious
               efforts
             </p>
+          </div>
+
+          {/* New donation bar div */}
+          <div className="donation-bar w-full max-w-4xl mx-auto text-center bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
+            <p className="text-3xl font-bold mb-6 text-black">
+              Community Raising for CEX Listing
+            </p>
+
+            <div className="relative w-full h-8 bg-white/50 rounded-2xl border-2 border-black mb-6">
+              <div
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl transition-all duration-1000"
+                style={{ width: "5%" }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-black text-lg font-bold">5%</span>
+              </div>
+            </div>
+
+            <p className="text-xl text-black mb-6">
+              Help support $RAKUN's growth through community donations
+            </p>
+
+            {/* New wallet address section */}
+            <div className="bg-white/50 p-4 rounded-xl border-2 border-black/20 max-w-3xl mx-auto">
+              <h4 className="text-xl font-bold mb-3 text-black">
+                CEX Listing Wallet
+              </h4>
+              <div className="flex items-center justify-center gap-2">
+                <input
+                  type="text"
+                  value="kaspa:qq7drle4tm3r5rm5x3pucdhm8wzlwdk30z0jsnq78y73pzxm4h2q52uaz93j2"
+                  readOnly
+                  className="bg-white/70 p-3 rounded-lg border-2 border-black/20 flex-1 font-mono text-sm"
+                />
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText(
+                      "kaspa:qq7drle4tm3r5rm5x3pucdhm8wzlwdk30z0jsnq78y73pzxm4h2q52uaz93j2"
+                    );
+                    notify();
+                  }}
+                  className="bg-[#059284] text-white px-4 py-3 rounded-lg hover:bg-black transition-colors duration-300 flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Copy
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div
