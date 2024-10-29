@@ -5,7 +5,7 @@ import rakunIndustrial from "../assets/rakun-industrial.png";
 import rakunStock from "../assets/rakun-stock.png";
 import rakunIconTrans from "../assets/rakun-icon-trans.png";
 import rakunIcon from "../assets/rakun-icon.png";
-import rakunRocket from "../assets/rakun-rocket.png";
+import rakunRocket from "../assets/rakun-rocket.jpg";
 import rakunWhitepaper from "../assets/RAKUN_Whitepaper.pdf";
 import {
   VerticalTimeline,
