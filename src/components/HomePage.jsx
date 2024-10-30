@@ -187,62 +187,68 @@ function HomePage() {
           </div>
 
           {/* New donation bar div */}
-          <div className="donation-bar w-full max-w-4xl mx-auto text-center bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
-            <p className="text-3xl font-bold mb-6 text-black">
-              Community Raising for CEX Listing
-            </p>
+          <div className="donation-bar w-full max-w-4xl mx-auto text-center bg-white/30 p-8 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
+            <div className="mb-8">
+              <h3 className="text-3xl font-bold text-black mb-4">
+                Community Raising for CEX Listing
+              </h3>
+              <p className="text-xl text-black/80">
+                Join us in reaching our next milestone! Your support helps
+                $RAKUN grow.
+              </p>
+            </div>
 
-            <div className="relative w-full h-8 bg-white/50 rounded-2xl border-2 border-black mb-6">
+            <div className="relative w-full h-12 bg-white/50 rounded-2xl border-2 border-black mb-6 overflow-hidden">
               <div
-                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl transition-all duration-1000"
-                style={{ width: "5%" }}
-              />
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl transition-all duration-1000 flex items-center"
+                style={{ width: "6%" }}
+              >
+                <div className="absolute inset-0 bg-white/20 animate-pulse" />
+              </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-black text-lg font-bold">5%</span>
+                <span className="text-black text-xl font-bold">6% Raised</span>
               </div>
             </div>
 
-            <p className="text-xl text-black mb-6">
-              Help support $RAKUN's growth through community donations
-            </p>
-
-            {/* New wallet address section */}
-            <div className="bg-white/50 p-4 rounded-xl border-2 border-black/20 max-w-3xl mx-auto">
-              <h4 className="text-xl font-bold mb-3 text-black">
-                CEX Listing Wallet
+            {/* Wallet address section with enhanced styling */}
+            <div className="bg-white/50 p-6 rounded-xl border-2 border-black/20 max-w-3xl mx-auto">
+              <h4 className="text-xl font-bold mb-4 text-black">
+                Support $RAKUN's CEX Listing
               </h4>
-              <div className="flex items-center justify-center gap-2">
-                <input
-                  type="text"
-                  value="kaspa:qq7drle4tm3r5rm5x3pucdhm8wzlwdk30z0jsnq78y73pzxm4h2q52uaz93j2"
-                  readOnly
-                  className="bg-white/70 p-3 rounded-lg border-2 border-black/20 flex-1 font-mono text-sm"
-                />
-                <button
-                  onClick={() => {
-                    navigator.clipboard.writeText(
-                      "kaspa:qq7drle4tm3r5rm5x3pucdhm8wzlwdk30z0jsnq78y73pzxm4h2q52uaz93j2"
-                    );
-                    notify();
-                  }}
-                  className="bg-[#059284] text-white px-4 py-3 rounded-lg hover:bg-black transition-colors duration-300 flex items-center gap-2"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+              <div className="flex flex-col sm:flex-row items-center gap-3">
+                <div className="relative flex-1 w-full">
+                  <input
+                    type="text"
+                    value="kaspa:qq7drle4tm3r5rm5x3pucdhm8wzlwdk30z0jsnq78y73pzxm4h2q52uaz93j2"
+                    readOnly
+                    className="w-full bg-white/70 p-4 rounded-lg border-2 border-black/20 font-mono text-sm pr-24"
+                  />
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        "kaspa:qq7drle4tm3r5rm5x3pucdhm8wzlwdk30z0jsnq78y73pzxm4h2q52uaz93j2"
+                      );
+                      notify();
+                    }}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#059284] text-white px-4 py-2 rounded-lg hover:bg-black transition-colors duration-300 flex items-center gap-2"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-                    />
-                  </svg>
-                  Copy
-                </button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Copy
+                  </button>
+                </div>
               </div>
             </div>
           </div>
