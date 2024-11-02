@@ -193,8 +193,8 @@ function HomePage() {
                 Community Raising for CEX Listing
               </h3>
               <p className="text-xl text-black/80">
-                Join us in reaching our next milestone! Your support helps
-                $RAKUN grow.
+                Join us in reaching our $10,000 goal! Your support helps $RAKUN
+                grow.
               </p>
             </div>
 
@@ -206,7 +206,9 @@ function HomePage() {
                 <div className="absolute inset-0 bg-white/20 animate-pulse" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-black text-xl font-bold">6% Raised</span>
+                <span className="text-black text-xl font-bold">
+                  $600 / $10,000 Raised
+                </span>
               </div>
             </div>
 
