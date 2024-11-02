@@ -194,7 +194,7 @@ function HomePage() {
               </h3>
               <p className="text-xl text-black/80">
                 Join us in reaching our $10,000 goal! Your support helps $RAKUN
-                grow.
+                to grow.
               </p>
             </div>
 
