@@ -128,7 +128,7 @@ function HomePage() {
             backgroundPosition: "center top 15%",
           }}
         >
-          <div className="buy-section bg-gradient-to-br from-white via-[#9cd6d0] to-[#8cc0bb] p-6 rounded-2xl shadow-2xl border-4 border-black max-w-sm w-full flex flex-col items-center text-center mx-auto md:mx-0 md:ml-16 lg:ml-24 mb-8 md:mb-16 transform hover:scale-105 transition-all duration-300">
+          <div className="buy-section bg-gradient-to-br from-white via-[#9cd6d0] to-[#8cc0bb] p-6 rounded-2xl shadow-2xl border-4 border-black max-w-sm w-full flex flex-col items-center text-center mx-auto lg:mx-0 lg:ml-24 mb-24 sm:mb-32 lg:mb-16 transform hover:scale-105 transition-all duration-300">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 text-black">
               $RAKUN
             </h2>
@@ -152,12 +152,25 @@ function HomePage() {
             </ul>
 
             <a
-              href="https://t.me/kspr_home_bot"
+              href="https://t.me/kspr_home_bot?start=Aaphp+PQ"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
             >
               Buy $RAKUN on KSPR Bot
+            </a>
+          </div>
+          <div className="absolute bottom-4 sm:bottom-8 lg:bottom-12 left-0 right-0 text-center px-4">
+            <a
+              href="https://trello.com/b/QakXKOvo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#059284] text-white text-lg sm:text-xl lg:text-3xl font-bold px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 rounded-xl sm:rounded-2xl
+              hover:bg-black transition-all duration-300 shadow-xl hover:shadow-2xl
+              transform hover:-translate-y-1 active:translate-y-0
+              border-2 sm:border-4 border-black/20 w-[90%] lg:w-auto max-w-md lg:max-w-none"
+            >
+              View Our Live Roadmap
             </a>
           </div>
         </div>
@@ -166,27 +179,7 @@ function HomePage() {
           id="donation-section"
           className="donation-section bg-gradient-to-br from-[#8cc0bb] via-[#9cd6d0] to-[#8cc0bb] p-8 lg:p-12"
         >
-          <div className="progress-bar w-full max-w-4xl mx-auto mb-8 text-center bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
-            <p className="text-3xl font-bold mb-6 text-black">
-              Token Minting Process Is Done
-            </p>
-
-            <div className="relative w-full h-8 bg-white/50 rounded-2xl border-2 border-black mb-6">
-              <div
-                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl flex items-center justify-center transition-all duration-1000"
-                style={{ width: "100%" }}
-              >
-                <span className="text-white text-lg font-bold">100%</span>
-              </div>
-            </div>
-
-            <p className="text-xl text-black">
-              We're totally minted out thanks to our community's precious
-              efforts
-            </p>
-          </div>
-
-          {/* New donation bar div */}
+          {/* Existing donation bar div */}
           <div className="donation-bar w-full max-w-4xl mx-auto text-center bg-white/30 p-8 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
             <div className="mb-8">
               <h3 className="text-3xl font-bold text-black mb-4">
@@ -253,6 +246,25 @@ function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="progress-bar w-full max-w-4xl mx-auto mt-8 text-center bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:scale-105 transition-all duration-300">
+            <p className="text-3xl font-bold mb-6 text-black">
+              Token Minting Process Is Done
+            </p>
+
+            <div className="relative w-full h-8 bg-white/50 rounded-2xl border-2 border-black mb-6">
+              <div
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl flex items-center justify-center transition-all duration-1000"
+                style={{ width: "100%" }}
+              >
+                <span className="text-white text-lg font-bold">100%</span>
+              </div>
+            </div>
+
+            <p className="text-xl text-black">
+              We're totally minted out in 12 Hours! Thanks to our community's
+              precious efforts
+            </p>
           </div>
         </div>
         <div
