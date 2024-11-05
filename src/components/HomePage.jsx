@@ -358,42 +358,7 @@ function HomePage() {
         </div>
       </div>
       {/* After the story section and before the footer */}
-      <div className="trello-section bg-gradient-to-br from-[#9cd6d0] via-[#a8e0da] to-[#8cc0bb] py-16 px-4 sm:px-6 md:px-8 lg:px-12 font-montserrat">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center mb-12">
-            Live Progress
-          </h2>
 
-          {/* Card container with simpler hover effect */}
-          <div className="bg-white/30 p-6 rounded-2xl shadow-2xl border-2 border-black/20 transform hover:shadow-3xl transition-all duration-300">
-            {/* Description text */}
-            <p className="text-xl text-center mb-8 text-black/80">
-              Track our real-time progress and upcoming developments on our
-              interactive roadmap
-            </p>
-
-            {/* Iframe container with responsive height */}
-            <div className="relative w-full h-[80vh] min-h-[500px] rounded-xl overflow-hidden border-2 border-black/20 bg-white/50">
-              <iframe
-                src="https://trello.com/b/QakXKOvo.html"
-                className="absolute top-0 left-0 w-full h-full"
-                frameBorder="0"
-                style={{ background: "transparent" }}
-                allowFullScreen
-                title="RAKUN Live Roadmap"
-              />
-            </div>
-
-            {/* Additional info or legend if needed */}
-            <div className="mt-6 text-center text-black/70">
-              <p className="text-sm">
-                ⚡ This roadmap is regularly updated to reflect our latest
-                progress and milestones
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div id="roadmap-section" className="bg-[#a8e0da] py-16 font-montserrat">
         <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center mb-12">
           Roadmap
