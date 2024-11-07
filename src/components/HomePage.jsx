@@ -151,14 +151,25 @@ function HomePage() {
               </li>
             </ul>
 
-            <a
-              href="https://t.me/kspr_home_bot?start=Aaphp+PQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
-            >
-              Buy $RAKUN on KSPR Bot
-            </a>
+            <div className="flex flex-col gap-4 w-full">
+              <a
+                href="https://t.me/kspr_home_bot?start=Aaphp+PQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+              >
+                Buy $RAKUN on KSPR Bot
+              </a>
+
+              <a
+                href="https://dapp.chainge.finance/?fromChain=KAS&toChain=ETH&fromToken=RAKUN&toToken=USDT"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+              >
+                Buy $RAKUN on Chainge
+              </a>
+            </div>
           </div>
           <div className="absolute bottom-4 sm:bottom-8 lg:bottom-12 left-0 right-0 text-center px-4">
             <a
