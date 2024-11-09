@@ -162,7 +162,7 @@ function HomePage() {
               </a>
 
               <a
-                href="https://dapp.chainge.finance/?fromChain=KAS&toChain=ETH&fromToken=RAKUN&toToken=USDT"
+                href="https://dapp.chainge.finance/?fromChain=KAS&toChain=KAS&fromToken=USDT&toToken=RAKUN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
