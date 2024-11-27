@@ -205,13 +205,13 @@ function HomePage() {
             <div className="relative w-full h-12 bg-white/50 rounded-2xl border-2 border-black mb-6 overflow-hidden">
               <div
                 className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#059284] to-[#8cc0bb] rounded-xl transition-all duration-1000 flex items-center"
-                style={{ width: "6%" }}
+                style={{ width: "16%" }}
               >
                 <div className="absolute inset-0 bg-white/20 animate-pulse" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-black text-xl font-bold">
-                  $600 / $10,000 Raised
+                  $1600 / $10,000 Raised
                 </span>
               </div>
             </div>
