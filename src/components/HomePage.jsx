@@ -4,7 +4,7 @@ import rakunGold from "../assets/rakun-gold-rush.png";
 import rakunIndustrial from "../assets/rakun-industrial.png";
 import rakunStock from "../assets/rakun-stock.png";
 import rakunIconTrans from "../assets/rakun-icon-trans.png";
-import rakunIcon from "../assets/rakun-icon.png";
+import rakunIcon from "../assets/PP.png";
 import rakunRocket from "../assets/rakun-rocket.jpg";
 import rakunWhitepaper from "../assets/RAKUN_Whitepaper.pdf";
 import {
@@ -81,12 +81,12 @@ function HomePage() {
             className="h-12 w-12 lg:h-24 lg:w-24 mr-3 md:mr-6 rounded-full object-cover border-2 lg:border-4 border-black shadow-lg hover:border-[#059284] transition-colors duration-300"
           />
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black drop-shadow-lg">
-            $RAKUN
+            RAKUN
           </h1>
         </div>
         <nav className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl lg:rounded-2xl px-4 lg:px-6 py-2 lg:py-4 shadow-lg">
           <ul className="flex flex-wrap justify-center gap-2 lg:gap-4">
-            {["$RAKUN", "Donation", "Story", "Roadmap", "Socials"].map(
+            {["RAKUN", "Donation", "Story", "Roadmap", "Socials"].map(
               (item) => (
                 <li key={item}>
                   <a
@@ -120,7 +120,7 @@ function HomePage() {
           </ul>
         </nav>
       </header>
-      <div id="$rakun-section" className="font-montserrat">
+      <div id="rakun-section" className="font-montserrat">
         <div
           className="home-section min-h-screen bg-cover bg-center p-4 sm:p-6 md:p-8 lg:p-12 relative flex flex-col justify-end"
           style={{
@@ -130,13 +130,13 @@ function HomePage() {
         >
           <div className="buy-section bg-gradient-to-br from-white via-[#9cd6d0] to-[#8cc0bb] p-6 rounded-2xl shadow-2xl border-4 border-black max-w-sm w-full flex flex-col items-center text-center mx-auto lg:mx-0 lg:ml-24 mb-24 sm:mb-32 lg:mb-16 transform hover:scale-105 transition-all duration-300">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 text-black">
-              $RAKUN
+              RAKUN
             </h2>
             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 text-black">
               Trash kingdom, financial freedom!
             </h3>
             <p className="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 text-gray-700">
-              $RAKUN is a community-driven token that aims to empower holders
+              RAKUN is a community-driven token that aims to empower holders
               through financial freedom.
             </p>
             <ul className="text-sm sm:text-base md:text-lg mb-4 sm:mb-5 text-left">
@@ -158,17 +158,17 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
               >
-                Buy $RAKUN on KSPR Bot
+                Buy RAKUN on KSPR Bot
               </a>
 
-              <a
+              {/* <a
                 href="https://dapp.chainge.finance/?fromChain=KAS&toChain=KAS&fromToken=USDT&toToken=RAKUN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#059284] text-white px-6 py-3 rounded-full text-lg font-bold hover:bg-black transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
               >
                 Buy $RAKUN on Chainge
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="absolute bottom-4 sm:bottom-8 lg:bottom-12 left-0 right-0 text-center px-4">
@@ -197,7 +197,7 @@ function HomePage() {
                 Community Raising for CEX Listing
               </h3>
               <p className="text-xl text-black/80">
-                Join us in reaching our $10,000 goal! Your support helps $RAKUN
+                Join us in reaching our $10,000 goal! Your support helps RAKUN
                 to grow.
               </p>
             </div>
@@ -219,7 +219,7 @@ function HomePage() {
             {/* Wallet address section with enhanced styling */}
             <div className="bg-white/50 p-6 rounded-xl border-2 border-black/20 max-w-3xl mx-auto">
               <h4 className="text-xl font-bold mb-4 text-black">
-                Support $RAKUN's CEX Listing
+                Support RAKUN's CEX Listing
               </h4>
               <div className="flex flex-col sm:flex-row items-center gap-3">
                 <div className="relative flex-1 w-full">
@@ -409,7 +409,7 @@ function HomePage() {
                 <IoRocketOutline className="mr-2 mt-1 flex-shrink-0 text-2xl text-white" />
                 <p className="text-center">
                   Promote the minting process and encourage community
-                  participation to reach the 28.7 billion $RAKUN supply cap.
+                  participation to reach the 28.7 billion RAKUN supply cap.
                 </p>
               </li>
               <li className="flex items-center border-2 bg-[#aad5ce] border-black rounded-3xl px-4 py-2 shadow-md">
@@ -450,7 +450,7 @@ function HomePage() {
                 <FaUsers className="mr-2 mt-1 flex-shrink-0 text-xl text-white" />
                 <p className="text-center">
                   Organize virtual events, AMAs, and collaborations with
-                  influencers to spread awareness about $RAKUN's fair-launch
+                  influencers to spread awareness about RAKUN's fair-launch
                   ethos and vision.
                 </p>
               </li>
@@ -485,7 +485,7 @@ function HomePage() {
                 <FaChartLine className="mr-2 mt-1 flex-shrink-0 text-xl text-white" />
                 <p className="text-center">
                   Engage the community in decision-making for potential exchange
-                  partnerships to ensure alignment with $RAKUN's fair-launch
+                  partnerships to ensure alignment with RAKUN's fair-launch
                   principles.
                 </p>
               </li>
@@ -512,14 +512,14 @@ function HomePage() {
               <li className="flex items-center mb-2 border-2 bg-[#aad5ce] border-black rounded-3xl px-4 py-2 shadow-md">
                 <FaCode className="mr-2 mt-1 flex-shrink-0 text-xl text-white" />
                 <p className="text-center">
-                  Develop a unique NFT collection to enable $RAKUN holders to
+                  Develop a unique NFT collection to enable RAKUN holders to
                   mint, collect, and trade NFTs.
                 </p>
               </li>
               <li className="flex items-center border-2 bg-[#aad5ce] border-black rounded-3xl px-4 py-2 shadow-md">
                 <FaCode className="mr-2 mt-1 flex-shrink-0 text-xl text-white" />
                 <p className="text-center">
-                  Promote NFT utility within the ecosystem, offering $RAKUN
+                  Promote NFT utility within the ecosystem, offering RAKUN
                   community members exclusive access and benefits tied to NFT
                   ownership.
                 </p>
@@ -548,14 +548,14 @@ function HomePage() {
                 <FaGlobe className="mr-2 mt-1 flex-shrink-0 text-xl text-white" />
                 <p className="text-center">
                   Establish community funds and initiatives focused on financial
-                  empowerment, supporting $RAKUN holders through community
+                  empowerment, supporting RAKUN holders through community
                   projects and investments.
                 </p>
               </li>
               <li className="flex items-center border-2 bg-[#aad5ce] border-black rounded-3xl px-4 py-2 shadow-md">
                 <FaGlobe className="mr-2 mt-1 flex-shrink-0 text-xl text-white" />
                 <p className="text-center">
-                  Encourage decentralized governance to let $RAKUN holders vote
+                  Encourage decentralized governance to let RAKUN holders vote
                   on strategic projects, fostering a token ecosystem that aligns
                   with the values of inclusivity and financial accessibility.
                 </p>
@@ -572,7 +572,7 @@ function HomePage() {
           <div className="flex flex-wrap justify-between items-center">
             <div className="w-full md:w-1/3 mb-8 md:mb-0 flex flex-col items-center">
               <img
-                src={rakunIconTrans}
+                src={rakunIcon}
                 alt="Rakun Icon"
                 className="h-24 w-24 mb-4 rounded-full object-cover border-4 border-black shadow-lg hover:border-[#059284] transition-all duration-300 transform hover:scale-105"
               />
